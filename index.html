@@ -23,6 +23,93 @@
             opacity: 1 !important;
             transform: translate(0) scale(1) !important;
         }
+        .resume .func .work,
+        .resume .func .edu {
+          float: left;
+        }
+        .resume .func .work small,
+        .resume .func .edu small {
+          display: block;
+          opacity: 0.7;
+        }
+        .resume .func .work ul li,
+        .resume .func .edu ul li {
+          position: relative;
+          margin-left: 15px;
+          padding-left: 25px;
+          padding-bottom: 15px;
+        }
+        .resume .func .work ul li:hover::before,
+        .resume .func .edu ul li:hover::before {
+          animation: circle 1.2s infinite;
+        }
+        .resume .func .work ul li:hover span,
+        .resume .func .edu ul li:hover span {
+          color: $yellow;
+        }
+        @keyframes circle {
+          from {
+            box-shadow: 0 0 0 0px $yellow;
+          }
+          to {
+            box-shadow: 0 0 0 6px rgba(255, 255, 255, 0);
+          }
+        }
+        .resume .func .work ul li:first-of-type::before,
+        .resume .func .edu ul li:first-of-type::before {
+          width: 10px;
+          height: 10px;
+          left: 1px;
+        }
+        .resume .func .work ul li:last-of-type,
+        .resume .func .edu ul li:last-of-type {
+          padding-bottom: 3px;
+        }
+        .resume .func .work ul li:last-of-type::after,
+        .resume .func .edu ul li:last-of-type::after {
+          border-radius: 1.5px;
+        }
+        .resume .func .work ul li::before,
+        .resume .func .work ul li::after,
+        .resume .func .edu ul li::before,
+        .resume .func .edu ul li::after {
+          content: "";
+          display: block;
+          position: absolute;
+        }
+        .resume .func .work ul li::before,
+        .resume .func .edu ul li::before {
+          width: 7px;
+          height: 7px;
+          border: 3px solid $white;
+          background: $orange;
+          border-radius: 50%;
+          left: 3px;
+          z-index: 1;
+        }
+        .resume .func .work ul li::after,
+        .resume .func .edu ul li::after {
+          width: 3px;
+          height: 100%;
+          background: $white;
+          left: 5px;
+          top: 0;
+        }
+        .resume .func .work ul li span,
+        .resume .func .edu ul li span {
+          transition-duration: 0.3s;
+        }
+        .resume .func .work {
+          width: 48%;
+          background: $darker-blue;
+          padding: 15px;
+          margin: 0 4% 15px 0;
+        }
+        .resume .func .edu {
+          width: 48%;
+          background: $darker-blue;
+          padding: 15px;
+}
       </style>
     </noscript>
   </head>
@@ -337,72 +424,26 @@
 <div class="section px-3 px-lg-4 pt-5" id="experience">
   <div class="container-narrow">
     <div class="text-center mb-5">
-      <h2 class="marker marker-center">Experience</h2>
+      <h2 class="marker marker-center">Experience / Education</h2>
     </div>
-    <div class="row">
+    <div class="row resume">      
+      <div class="col-md-6 work">
+        <h3><i class="fa fa-briefcase"></i>Experience</h3>
+        <ul>
+          <li><span>Technical Consultant -<br>Web Design</span><small>Fiserv</small><small>Apr 2018 - Now</small></li>
+          <li><span>Web Designer</span><small>Lynden</small><small>Jan 2018 - Apr 2018</small></li>
+          <li><span>Intern - Web Design</span><small>Lynden</small><small>Aug 2017 - Dec 2017</small></li>
+        </ul>
+      </div>          
       <div class="col-md-6">
-        <div class="card mb-3" data-aos="fade-right" data-aos-delay="100">
-          <div class="card-header px-3 py-2">
-            <div class="d-flex justify-content-between">
-              <div>
-                <h3 class="h5 mb-1">UI/UX Design</h3>
-                <div class="text-muted text-small">Designerr Inc. <small>(2012-2014)</small></div>
-              </div><img src="images/services/ui-ux.svg" width="48" height="48" alt="ui-ux"/>
-            </div>
-          </div>
-          <div class="card-body px-3 py-2">
-            <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
-            <p>Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card mb-3" data-aos="fade-left" data-aos-delay="300">
-          <div class="card-header px-3 py-2">
-            <div class="d-flex justify-content-between">
-              <div>
-                <h3 class="h5 mb-1">App Development</h3>
-                <div class="text-muted text-small">MakeMyApp LLC. <small>(2015-2018)</small></div>
-              </div><img src="images/services/app-development.svg" width="48" height="48" alt="app development"/>
-            </div>
-          </div>
-          <div class="card-body px-3 py-2">
-            <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
-            <p>Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card mb-3" data-aos="fade-right" data-aos-delay="200">
-          <div class="card-header px-3 py-2">
-            <div class="d-flex justify-content-between">
-              <div>
-                <h3 class="h5 mb-1">Web Design</h3>
-                <div class="text-muted text-small">Webbie LLC. <small>(2018-2020)</small></div>
-              </div><img src="images/services/web-design.svg" width="48" height="48" alt="web design"/>
-            </div>
-          </div>
-          <div class="card-body px-3 py-2">
-            <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
-            <p>Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card mb-3" data-aos="fade-left" data-aos-delay="400">
-          <div class="card-header px-3 py-2">
-            <div class="d-flex justify-content-between">
-              <div>
-                <h3 class="h5 mb-1">Full Stack Development</h3>
-                <div class="text-muted text-small">Coder Inc. <small>(2020-2021)</small></div>
-              </div><img src="images/services/full-stack.svg" width="48" height="48" alt="full stack"/>
-            </div>
-          </div>
-          <div class="card-body px-3 py-2">
-            <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
-            <p>Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
-          </div>
-        </div>
+          <div class="edu">
+            <h3><i class="fa fa-graduation-cap"></i>Education</h3>
+            <ul>
+              <li><span>Bachelor of Science<br>Web Design and Development</span><small>BYU-Idaho</small><small>Jan. 2016 - Apr. 2018</small></li>
+              <li><span>Computer Science</span><small>Edmonds Community College</small><small>Sept. 2014 - Dec. 2015</small></li>
+              <li><span>High School</span><small>Henry M. Jackson High School</small><small>Jan. 2013 - Jun. 2015</small></li>
+            </ul>
+          </div> 
       </div>
     </div>
   </div>
