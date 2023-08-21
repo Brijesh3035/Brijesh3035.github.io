@@ -23,6 +23,36 @@
             opacity: 1 !important;
             transform: translate(0) scale(1) !important;
         }
+        .resume .func {
+          width: 100%;
+          padding: 30px;
+        }
+        .resume .func:hover > div {
+          transition-duration: 0.5s;
+        }
+        .resume .func:hover > div:hover h3 i {
+          transform: scale(1.25);
+        }
+        .resume .func:hover > div:not(:hover) {
+          opacity: 0.5;
+        }
+        .resume .func h3 {
+          transition-duration: 0.3s;
+          margin-top: 0;
+        }
+        .resume .func h3 i {
+          color: $darker-blue;
+          background: $orange;
+          width: 42px;
+          height: 42px;
+          font-size: 20px;
+          line-height: 42px;
+          border-radius: 50%;
+          text-align: center;
+          vertical-align: middle;
+          margin-right: 8px;
+          transition-duration: 0.3s;
+        }
         .resume .func .work,
         .resume .func .edu {
           float: left;
@@ -421,12 +451,12 @@
     </div>
   </div>
 </div>
-<div class="section px-3 px-lg-4 pt-5" id="experience">
+<div class="section px-3 px-lg-4 pt-5 resume" id="experience">
   <div class="container-narrow">
     <div class="text-center mb-5">
       <h2 class="marker marker-center">Experience / Education</h2>
     </div>
-    <div class="row resume">      
+    <div class="row func">      
       <div class="col-md-6 work">
         <h3><i class="fa fa-briefcase"></i>Experience</h3>
         <ul>
