@@ -319,8 +319,8 @@ i.fa fa-graduation-cap {
           margin-top: 0;
         }
         .resume .func h3 i {
-          color: $darker-blue;
-          background: $orange;
+          color: #212529 !important;
+          background: #fcdf6c !important;
           width: 42px;
           height: 42px;
           font-size: 20px;
