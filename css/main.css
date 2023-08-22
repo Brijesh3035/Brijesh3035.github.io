@@ -274,8 +274,8 @@ footer a:not(.nav-link) {
           color: #202529;
           margin: 10px 0;
           font-size: 1.25em;
-        }
-        i.fa.fa-briefcase {
+}
+i.fa.fa-briefcase {
     color: #212529;
     background: #fcdf6c;
     width: 42px;
@@ -418,7 +418,7 @@ i.fa fa-graduation-cap {
         .resume .func .edu {
           width: 48% !important;
           padding: 15px;
-          margin: 0px 3% 0px 0;
+          margin: 0px 0% 0px 0;
           border: 2px solid #fcdf6c;
           border-radius: 15px;
           box-shadow: 5px 10px #fcdf6c;
