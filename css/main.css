@@ -271,9 +271,9 @@ footer a:not(.nav-link) {
 }
 
 .custom_h3 {
-          color: #202529;
-          margin: 10px 0;
-          font-size: 1.25em;
+    color: #202529;
+    margin: 20px 17px;
+    font-size: 1.25em;
 }
 i.fa.fa-briefcase {
     color: #212529;
@@ -342,10 +342,11 @@ i.fa fa-graduation-cap {
         }
         .resume .func .work ul li,
         .resume .func .edu ul li {
-          position: relative;
-          margin-left: 15px;
-          padding-left: 25px;
-          padding-bottom: 15px;
+            position: relative;
+            margin-left: 0px;
+            padding-left: 24px;
+            padding-bottom: 15px;
+            list-style: none;
         }
         .resume .func .work ul li:hover::before,
         .resume .func .edu ul li:hover::before {
