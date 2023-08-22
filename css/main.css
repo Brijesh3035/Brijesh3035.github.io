@@ -271,13 +271,26 @@ footer a:not(.nav-link) {
 }
 
 .custom_h3 {
-          color: #ffb300;
+          color: #fcdf6c;
           margin: 10px 0;
           font-size: 1.25em;
         }
         i.fa.fa-briefcase {
     color: #212529;
-    background: #ffb300;
+    background: #fcdf6c;
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+    line-height: 42px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 8px;
+    transition-duration: 0.3s;
+}
+i.fa fa-graduation-cap {
+    color: #212529;
+    background: #fcdf6c;
     width: 42px;
     height: 42px;
     font-size: 20px;
@@ -395,13 +408,18 @@ footer a:not(.nav-link) {
           transition-duration: 0.3s;
         }
         .resume .func .work {
-          width: 48%;
-          background: $darker-blue;
+          width: 48% !important;
           padding: 15px;
-          margin: 0 4% 15px 0;
+          margin: 0px 3% 0px 0;
+          border: 2px solid #fcdf6c;
+          border-radius: 15px;
+          box-shadow: 5px 10px #fcdf6c;
         }
         .resume .func .edu {
-          width: 48%;
-          background: $darker-blue;
+          width: 48% !important;
           padding: 15px;
-}
+          margin: 0px 3% 0px 0;
+          border: 2px solid #fcdf6c;
+          border-radius: 15px;
+          box-shadow: 5px 10px #fcdf6c;
+        }
